@@ -8,35 +8,27 @@
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
 </head>
 <body>
-  <header>
-  <div class="nav-container">
-    <a href="index.html">
-      <img src="logo djy.png" alt="Jaymes65 Logo" />
-    </a>
-
-    <div class="menu-toggle" onclick="toggleMenu()">☰</div>
-
-    <nav id="main-nav">
-      <ul class="nav-links">
-        <li><a href="index.html">Home</a></li>
-        <li><a href="about.html">About</a></li>
-        <li><a href="gallery.html">Gallery</a></li>
-        <li><a href="contact.html">Contact</a></li>
-        <li><a href="contact.html" class="book-btn">Book Me</a></li>
-      </ul>
-    </nav>
+  <header class="navbar">
+  <div class="logo">
+    <img src="logo.png" alt="Jaymes65 Logo">
   </div>
+  <button class="menu-toggle" id="menu-btn">
+    ☰
+  </button>
+  <nav class="nav-links" id="nav-links">
+    <a href="#home">Home</a>
+    <a href="#about">About</a>
+    <a href="#gallery">Gallery</a>
+    <a href="#contact">Contact</a>
+    <a href="#book">Book Me</a>
+  </nav>
 </header>
-  <!-- Hero Section -->
-  <section class="hero">
+
+<section class="hero-section" id="home">
+  <div class="overlay"></div>
+  <div class="content">
     <h1>Jaymes65</h1>
     <p>Afro-House DJ • Deep House • Amapiano • Afro-Pop</p>
-  </section>
-  <!-- JavaScript -->
-<script>
-  function toggleMenu() {
-    document.getElementById("main-nav").classList.toggle("active");
-  }
-</script>
-</body>
-</html>
+  </div>
+</section>
+
