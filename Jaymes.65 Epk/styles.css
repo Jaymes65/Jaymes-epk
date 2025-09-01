@@ -177,6 +177,67 @@ nav a:hover {
 }
 
 /* Mobile Nav */
+/* 🔹 Make hero sections readable on mobile */
+.hero-section {
+  position: relative;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  overflow: hidden;
+}
+
+/* Dark overlay behind text */
+.hero-section::before {
+  content: "";
+  position: absolute;
+  top: 0; left: 0; right: 0; bottom: 0;
+  background: rgba(0, 0, 0, 0.55); /* semi-transparent black */
+  z-index: 1;
+}
+
+.hero-section .content {
+  position: relative;
+  z-index: 2; /* keeps text above overlay */
+  color: white;
+}
+
+/* 🔹 Fix hamburger menu button */
+.navbar .menu-toggle {
+  padding: 6px 10px;
+  margin-left: 12px;
+  border-radius: 6px;
+  background: rgba(0, 0, 0, 0.6); /* subtle dark background */
+  border: 2px solid #ffcc00; /* gold border */
+}
+
+/* 🔹 Remove large black gap */
+.hero-section {
+  min-height: auto;
+  padding: 4rem 1rem; /* balanced spacing */
+}
+
+/* 🔹 Prevent horizontal scrolling */
+body {
+  overflow-x: hidden;
+}
+
+/* 🔹 Mobile-friendly text sizes */
+@media (max-width: 768px) {
+  h1 {
+    font-size: 2rem;
+  }
+  h2 {
+    font-size: 1.4rem;
+  }
+  p {
+    font-size: 1rem;
+    line-height: 1.5;
+  }
+}
+
+
 @media (max-width: 768px) {
   nav {
     flex-direction: column;
@@ -483,4 +544,5 @@ body {
 .booking-form button:hover {
   background-color: #e0a800;
 }
+
 
