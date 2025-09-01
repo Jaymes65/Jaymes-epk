@@ -39,6 +39,30 @@
       <img src="images/IMG-20250617-WA0005.jpg" alt="DJ Setup">
       <img src="images/pro.jpg" alt="Festival Stage">
     </div>
+    <!-- Lightbox container -->
+<div id="lightbox" class="lightbox">
+  <span class="close">&times;</span>
+  <img class="lightbox-content" id="lightbox-img">
+</div>
+
+<script>
+  const galleryItems = document.querySelectorAll(".gallery-item img");
+  const lightbox = document.getElementById("lightbox");
+  const lightboxImg = document.getElementById("lightbox-img");
+  const closeBtn = document.querySelector(".close");
+
+  galleryItems.forEach(img => {
+    img.addEventListener("click", () => {
+      lightbox.style.display = "flex";
+      lightboxImg.src = img.src;
+    });
+  });
+
+  closeBtn.addEventListener("click", () => {
+    lightbox.style.display = "none";
+  });
+</script>
   </section>
 </body>
 </html>
+
