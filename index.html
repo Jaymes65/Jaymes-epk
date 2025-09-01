@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Jaymes65 | EPK</title>
+  <link rel="stylesheet" href="styles.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <header>
+  <div class="nav-container">
+    <a href="index.html">
+      <img src="logo djy.png" alt="Jaymes65 Logo" />
+    </a>
+
+    <div class="menu-toggle" onclick="toggleMenu()">☰</div>
+
+    <nav id="main-nav">
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="gallery.html">Gallery</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        <li><a href="contact.html" class="book-btn">Book Me</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+  <!-- Hero Section -->
+  <section class="hero">
+    <h1>Jaymes65</h1>
+    <p>Afro-House DJ • Deep House • Amapiano • Afro-Pop</p>
+  </section>
+  <!-- JavaScript -->
+<script>
+  function toggleMenu() {
+    document.getElementById("main-nav").classList.toggle("active");
+  }
+</script>
+</body>
+</html>
