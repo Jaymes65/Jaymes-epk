@@ -15,8 +15,13 @@ body {
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
+  overflow-x: hidden;
 }
 
+img, iframe {
+  max-width: 100%;
+  height: auto;
+}
 
 .menu-toggle {
   display: none;
@@ -478,3 +483,4 @@ body {
 .booking-form button:hover {
   background-color: #e0a800;
 }
+
