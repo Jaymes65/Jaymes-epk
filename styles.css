@@ -108,3 +108,51 @@ body {
     font-size: 1rem;
   }
 }
+/* 🔹 About Section */
+.about-section {
+  background: #000; /* black background */
+  color: #fff;
+  padding: 4rem 1.5rem;
+  text-align: left;
+}
+
+.about-section .container {
+  max-width: 900px;
+  margin: auto;
+}
+
+.about-section h2 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+  color: #ffcc00; /* gold highlight */
+}
+
+.about-section h3 {
+  font-size: 1.5rem;
+  margin-top: 2rem;
+  margin-bottom: 0.5rem;
+  color: #ffcc00;
+}
+
+.about-section p {
+  font-size: 1.1rem;
+  line-height: 1.6;
+  margin-bottom: 1rem;
+}
+
+/* 🔹 Mobile adjustments */
+@media (max-width: 768px) {
+  .about-section {
+    padding: 2.5rem 1rem;
+  }
+  .about-section h2 {
+    font-size: 1.6rem;
+  }
+  .about-section h3 {
+    font-size: 1.3rem;
+  }
+  .about-section p {
+    font-size: 1rem;
+  }
+}
+
