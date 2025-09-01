@@ -21,30 +21,46 @@
   </nav>
 </header>
 
-  <section class="contact-section">
-    <h1>Contact & Booking</h1>
+  <section class="contact-section" id="contact">
+  <div class="container">
+    <h2>Contact / Booking</h2>
+    <p>Let’s connect! For bookings, collaborations, or inquiries, reach out below.</p>
 
-    <div class="contact-details">
-      <p><i class="fas fa-phone"></i> <a href="tel:+27815938956">+27 81 593 8956</a></p>
-      <p><i class="fas fa-envelope"></i> <a href="mailto:jaygraphicx65@gmail.com">jaygraphicx65@gmail.com</a></p>
+    <div class="contact-grid">
+      <!-- Contact Form -->
+      <div class="contact-form">
+        <form action="https://formspree.io/f/yourFormID" method="POST">
+          <input type="text" name="name" placeholder="Your Name" required>
+          <input type="email" name="email" placeholder="Your Email" required>
+          <textarea name="message" rows="5" placeholder="Your Message" required></textarea>
+          <button type="submit">Send Message</button>
+        </form>
+      </div>
 
-      <div class="social-icons">
-        <a href="https://instagram.com/jaymes.65" target="_blank"><i class="fab fa-instagram"></i></a>
-        <a href="https://facebook.com/share/19PYkbSBfz/" target="_blank"><i class="fab fa-facebook-f"></i></a>
-        <a href="https://twitter.com/Jaymes65" target="_blank"><i class="fab fa-twitter"></i></a>
-        <a href="https://www.youtube.com/@Jaymes.65" target="_blank"><i class="fab fa-youtube"></i></a>
-        <a href="https://hearthis.at/jaymes65-dj" target="_blank"><i class="fas fa-music"></i></a>
+      <!-- Contact Info -->
+      <div class="contact-info">
+        <h3>Get In Touch</h3>
+        <p><strong>Phone:</strong> +27 73 349 0977</p>
+        <p><strong>Email:</strong> bookings@jaymes65.com</p>
+
+        <h3>Follow Me</h3>
+        <div class="social-links">
+          <a href="https://www.instagram.com/jaymes.65" target="_blank">Instagram</a>
+          <a href="https://www.facebook.com/JaymesManyange" target="_blank">Facebook</a>
+          <a href="https://twitter.com/Jaymes65" target="_blank">Twitter</a>
+          <a href="https://hearthis.at/jaymes65-dj/" target="_blank">HearThis</a>
+        </div>
       </div>
     </div>
 
-    <form class="booking-form" action="#" method="post">
-      <input type="text" name="name" placeholder="Your Name" required>
-      <input type="email" name="email" placeholder="Your Email" required>
-      <input type="text" name="event" placeholder="Event Type / Details" required>
-      <input type="date" name="date" required>
-      <textarea name="message" rows="5" placeholder="Additional message (optional)"></textarea>
-      <button type="submit">Send Booking Request</button>
-    </form>
-  </section>
-</body>
-</html>
+    <!-- Google Map -->
+    <div class="map">
+      <iframe 
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3586.325... (replace with your location embed)"
+        width="100%" height="300" style="border:0;" allowfullscreen="" loading="lazy">
+      </iframe>
+    </div>
+  </div>
+</section>
+
+
